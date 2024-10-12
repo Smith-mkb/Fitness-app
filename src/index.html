@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Fitness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+</head>
+
+<body class="bg-black">
+
+    <!-- Container principal -->
+    <div class="max-w-sm mx-auto p-4 bg-gray-400 shadow-lg rounded-lg">
+
+        <!-- Header de l'application -->
+        <div class="text-center">
+            <h1 class="text-lg font-semibold text-gray-800">BIENVENUE DANS VOTRE ESPACE FITNESS</h1>
+        </div>
+
+        <!-- Section des statistiques principales -->
+        <div class="flex justify-around mt-4">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-800">4</h2>
+                <p class="text-sm text-gray-600">EXERCICES</p>
+            </div>
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-800">854</h2>
+                <p class="text-sm text-gray-600">KCAL</p>
+            </div>
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-800">50</h2>
+                <p class="text-sm text-gray-600">MINUTES</p>
+            </div>
+        </div>
+
+        <!-- Objectif Hebdomadaire -->
+        <div class="bg-gray-200 p-4 rounded-lg mt-6">
+            <h3 class="font-semibold text-gray-800">Objectif hebdomadaire</h3>
+            <div class="flex justify-between mt-2">
+                <p class="text-gray-600">0/4</p>
+                <div class="flex space-x-2">
+                    <span class="px-2 py-1 bg-white rounded-full text-sm text-gray-800">6</span>
+                    <span class="px-2 py-1 bg-white rounded-full text-sm text-gray-800">7</span>
+                    <span class="px-2 py-1 bg-white rounded-full text-sm text-gray-800">8</span>
+                    <span class="px-2 py-1 bg-white rounded-full text-sm text-gray-800">9</span>
+                    <span class="px-2 py-1 bg-white rounded-full text-sm text-gray-800">10</span>
+                    <span class="px-2 py-1 bg-indigo-500 text-white rounded-full text-sm">11</span>
+                    <span class="px-2 py-1 bg-white rounded-full text-sm text-gray-800">12</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rapport de Poids -->
+        <div class="bg-white p-4 rounded-lg mt-4">
+            <h3 class="font-semibold text-gray-800">RAPPORTS</h3>
+            <div class="mt-4">
+                <div class="flex justify-between">
+                    <span class="text-gray-800 text-lg font-light">Actuel</span>
+                    <span class="text-gray-800 text-lg font-bold">75 Kg</span>
+                </div>
+                <div class="mt-2 flex justify-between text-gray-600 text-sm">
+                    <p>Le plus lourd <span class="font-bold">75</span></p>
+                    <p>Le plus léger <span class="font-bold">75</span></p>
+                </div>
+                <!-- Graphique de poids (Simple placeholder) -->
+                <div class="bg-gray-200 rounded-lg mt-2 p-4">
+                    <p class="text-center text-gray-600">Graphique de poids ici</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section IMC -->
+        <div class="bg-white p-4 rounded-lg mt-4">
+            <h3 class="font-semibold text-gray-800">IMC</h3>
+            <div class="mt-2 flex justify-between">
+                <p class="text-lg font-bold text-gray-800">75 Kg</p>
+                <span class="text-sm text-blue-600">Poids normal</span>
+            </div>
+            <!-- Barre IMC -->
+            <div class="w-full bg-gray-300 rounded-full h-2.5 mt-2">
+                <div class="bg-blue-500 h-2.5 rounded-full w-1/3"></div>
+            </div>
+            <div class="mt-2 text-sm text-gray-600 flex justify-between">
+                <span>15</span>
+                <span>18.5</span>
+                <span>25</span>
+                <span>30</span>
+                <span>35</span>
+                <span>40</span>
+            </div>
+            <p class="text-center text-sm mt-2">Taille: 175 cm</p>
+        </div>
+
+        <!-- Menu de navigation -->
+        <div class="mt-6 -ml-4 -mr-4 -mb-4 p-2 flex justify-around bg-white text-gray-600 w-[384px]">
+            <div class="text-center">
+                <svg class="h-6 w-6 mx-auto text-indigo-500" viewBox="0 0 25 25" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M22.3678 9.86913C22.3678 9.69466 22.2985 9.52732 22.1751 9.40395C22.0517 9.28058 21.8844 9.21127 21.7099 9.21127C21.5354 9.21127 21.3681 9.28058 21.2447 9.40395C21.1214 9.52732 21.0521 9.69466 21.0521 9.86913H22.3678ZM3.94794 9.86913C3.94794 9.69466 3.87863 9.52732 3.75526 9.40395C3.63189 9.28058 3.46456 9.21127 3.29009 9.21127C3.11561 9.21127 2.94829 9.28058 2.82492 9.40395C2.70154 9.52732 2.63224 9.69466 2.63224 9.86913H3.94794ZM23.8756 12.9664C23.9991 13.0899 24.1666 13.1593 24.3413 13.1593C24.516 13.1593 24.6836 13.0899 24.8071 12.9664C24.9306 12.8428 25 12.6753 25 12.5006C25 12.3259 24.9306 12.1583 24.8071 12.0348L23.8756 12.9664ZM12.5 0.65904L12.9658 0.193272C12.9047 0.132008 12.8321 0.083401 12.7521 0.0502362C12.6722 0.0170714 12.5865 0 12.5 0C12.4135 0 12.3278 0.0170714 12.2479 0.0502362C12.1679 0.083401 12.0954 0.132008 12.0342 0.193272L12.5 0.65904ZM0.192923 12.0348C0.0693965 12.1583 0 12.3259 0 12.5006C0 12.6753 0.0693965 12.8428 0.192923 12.9664C0.31645 13.0899 0.483989 13.1593 0.658682 13.1593C0.833375 13.1593 1.00091 13.0899 1.12444 12.9664L0.192923 12.0348ZM5.92149 25H19.0785V23.6843H5.92149V25ZM22.3678 21.7107V9.86913H21.0521V21.7107H22.3678ZM3.94794 21.7107V9.86913H2.63224V21.7107H3.94794ZM24.8071 12.0348L12.9658 0.193272L12.0342 1.12481L23.8756 12.9664L24.8071 12.0348ZM12.0342 0.193272L0.192923 12.0348L1.12444 12.9664L12.9658 1.12481L12.0342 0.193272ZM19.0785 25C19.9509 25 20.7875 24.6534 21.4044 24.0366C22.0212 23.4197 22.3678 22.5831 22.3678 21.7107H21.0521C21.0521 22.2341 20.8441 22.7361 20.474 23.1062C20.1039 23.4763 19.6019 23.6843 19.0785 23.6843V25ZM5.92149 23.6843C5.39807 23.6843 4.89609 23.4763 4.52598 23.1062C4.15586 22.7361 3.94794 22.2341 3.94794 21.7107H2.63224C2.63224 22.5831 2.97878 23.4197 3.59564 24.0366C4.21249 24.6534 5.04913 25 5.92149 25V23.6843Z"
+                        fill="#2A08EE" />
+                </svg>
+
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto text-indigo-500" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 12l9 9m0 0l9-9m-9 9V3" />
+                </svg> -->
+                <p class="text-xs">Accueil</p>
+            </div>
+            <div class="text-center">
+                <svg class="h-6 w-6 mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_6_2)">
+                        <path
+                            d="M0.5 18V23M2.5 17V24M17.5 18V23M15.5 17V24M2.5 20.5H15.5M13.5 20.5L12.5 16.5C12.5 16.5 11 15.5 9 15.5C7 15.5 5.5 16.5 5.5 16.5L4.5 20.5M23.5 9.00001V14M21.5 8.00001V15M13 11.5H21.5M19.5 11.5L18.5 7.50001C18.5 7.50001 17 6.50001 15 6.50001C13 6.50001 11.5 7.50001 11.5 7.50001L11.25 8.50001M8.85 13.5C8.85 13.5 7.25 12.5 7.25 11.25C7.25 10.7864 7.43416 10.3418 7.76198 10.014C8.08979 9.68618 8.5344 9.50201 8.998 9.50201C9.4616 9.50201 9.90621 9.68618 10.234 10.014C10.5618 10.3418 10.746 10.7864 10.746 11.25C10.746 12.5 9.15 13.5 9.15 13.5H8.85ZM14.85 4.50001C14.85 4.50001 13.25 3.50001 13.25 2.25001C13.25 1.78642 13.4342 1.34181 13.762 1.01399C14.0898 0.686178 14.5344 0.502014 14.998 0.502014C15.4616 0.502014 15.9062 0.686178 16.234 1.01399C16.5618 1.34181 16.746 1.78642 16.746 2.25001C16.746 3.50001 15.15 4.50001 15.15 4.50001H14.85Z"
+                            stroke="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_6_2">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <p class="text-xs">Entraînements</p>
+            </div>
+            <div class="text-center">
+                <svg class="h-6 w-6 mx-auto" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_31)">
+                        <path
+                            d="M12.4096 -0.0298037C12.369 -0.0224606 12.3288 -0.0125041 12.2894 4.01959e-06C12.0723 0.0486595 11.8788 0.171084 11.7419 0.346416C11.605 0.521749 11.5331 0.739139 11.5385 0.961542V1.92308H2.88462C2.11957 1.92308 1.38585 2.22699 0.844884 2.76797C0.303914 3.30894 0 4.04265 0 4.8077L0 17.3077C0 18.9 1.29231 20.1923 2.88462 20.1923H11.5385V20.5529L6.30962 23.1673C6.07857 23.2789 5.90131 23.4777 5.81683 23.7199C5.73235 23.9622 5.74757 24.2281 5.85913 24.4591C5.9707 24.6902 6.16949 24.8674 6.41175 24.9519C6.65402 25.0364 6.91992 25.0212 7.15096 24.9096L11.5385 22.7164V23.0769C11.5385 23.3319 11.6398 23.5765 11.8201 23.7568C12.0004 23.9372 12.245 24.0385 12.5 24.0385C12.755 24.0385 12.9996 23.9372 13.1799 23.7568C13.3602 23.5765 13.4615 23.3319 13.4615 23.0769V22.7164L17.849 24.9096C18.0801 25.0212 18.346 25.0364 18.5882 24.9519C18.8305 24.8674 19.0293 24.6902 19.1409 24.4591C19.2524 24.2281 19.2677 23.9622 19.1832 23.7199C19.0987 23.4777 18.9214 23.2789 18.6904 23.1673L13.4615 20.5529V20.1923H22.1154C23.7077 20.1923 25 18.9 25 17.3077V4.8077C25 4.04265 24.6961 3.30894 24.1551 2.76797C23.6141 2.22699 22.8804 1.92308 22.1154 1.92308H13.4615V0.961542C13.4664 0.82481 13.442 0.688615 13.39 0.562058C13.338 0.435501 13.2596 0.321496 13.1601 0.22766C13.0605 0.133823 12.942 0.062317 12.8126 0.0179179C12.6832 -0.0264813 12.5458 -0.0427508 12.4096 -0.0298037ZM1.92308 4H23.0769V18H1.92308V4ZM20.0721 5.76923C19.8567 5.79239 19.6555 5.8876 19.501 6.03943L16.3462 9.1952L14.1529 7C14.0478 6.89223 13.919 6.81061 13.7766 6.76172C13.6343 6.71283 13.4825 6.69803 13.3334 6.71851C13.1843 6.739 13.0421 6.79419 12.9182 6.87966C12.7944 6.96512 12.6923 7.07847 12.6202 7.21058L9.76538 12.199L8.59327 9.25385C8.53635 9.10178 8.44185 8.9666 8.31858 8.86092C8.19531 8.75524 8.04729 8.68249 7.88831 8.64947C7.72933 8.61644 7.56458 8.62422 7.40942 8.67206C7.25425 8.7199 7.11373 8.80626 7.00096 8.92308L4.11635 11.8077C4.02543 11.8985 3.9533 12.0064 3.90407 12.1251C3.85485 12.2439 3.82949 12.3711 3.82944 12.4997C3.8294 12.6282 3.85467 12.7555 3.90381 12.8742C3.95296 12.993 4.02501 13.1009 4.11587 13.1918C4.20672 13.2827 4.31459 13.3549 4.43331 13.4041C4.55204 13.4533 4.6793 13.4787 4.80783 13.4787C4.93636 13.4788 5.06364 13.4535 5.1824 13.4044C5.30117 13.3552 5.40908 13.2832 5.5 13.1923L7.33269 11.3596L8.71538 14.7846C8.78064 14.9564 8.89375 15.1059 9.04133 15.2154C9.1889 15.3248 9.36475 15.3897 9.54807 15.4024C9.73138 15.415 9.91448 15.3749 10.0757 15.2867C10.2369 15.1985 10.3695 15.066 10.4577 14.9048L13.6731 9.28558L15.6558 11.2692C15.7454 11.362 15.8529 11.4358 15.9716 11.4861C16.0904 11.5365 16.2181 11.5625 16.3471 11.5625C16.4761 11.5625 16.6038 11.5365 16.7226 11.4861C16.8414 11.4358 16.9488 11.362 17.0385 11.2692L20.8846 7.42308C21.0365 7.28246 21.139 7.09658 21.1768 6.89307C21.2146 6.68956 21.1857 6.47929 21.0944 6.29351C21.0031 6.10773 20.8544 5.95636 20.6702 5.8619C20.486 5.76745 20.2762 5.73495 20.0721 5.76923Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_2_31">
+                            <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <p class="text-xs">Statistiques</p>
+            </div>
+            <div class="text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5.121 17.804A5 5 0 1112 21a5 5 0 01-6.879-3.196z" />
+                </svg>
+                <p class="text-xs">Profil</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
